@@ -9,7 +9,7 @@ export GITHUB_TOKEN=
 
 ### file terraform.tfvars
 ```console
-github_organization= "gss-bds"
+github_organization= "ramiroduarteavalos"
 github_token= "xxxxxxxx"
 github_repo= "xxxxxx"
 github_repo_description= "xxxxxxxx"
@@ -32,5 +32,5 @@ terraform destroy
 
 ## Id teams
 ```console
-curl -H "Authorization: token $GITHUB_TOKEN" https://api.github.com/orgs/gss-bds/teams
+curl -H "Authorization: token $GITHUB_TOKEN" https://api.github.com/orgs/ramiroduarteavalos/teams
 ```
