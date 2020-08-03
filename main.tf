@@ -42,9 +42,9 @@ resource "github_repository_webhook" "webhook1" {
   repository = github_repository.repo.name
 
   configuration {
-    url          = "https://dev.azure.com/bdsdigital/_apis/public/hooks/externalEvents?publisherId=github&channelId=074d5f2a-00a4-44a5-a430-d39db1af0f02&api-version=5.2-preview"
+    url          = "xxx"
     content_type = "application/json"
-    secret       = "qMQutYhLykGt7NXxz2UIMw=="
+    secret       = "xxx"
     insecure_ssl = false
 
   }
@@ -59,9 +59,9 @@ resource "github_repository_webhook" "hook2" {
   repository = github_repository.repo.name
 
   configuration {
-    url          = "https://dev.azure.com/bdsdigital/_apis/public/hooks/externalEvents?publisherId=github&channelId=c189935c-605e-411c-b3cd-63bc253f3a6b&api-version=6.0-preview"
+    url          = "xxx"
     content_type = "application/json"
-    secret       = "qMQutYhLykGt7NXxz2UIMw=="
+    secret       = "xxx"
     insecure_ssl = false
 
   }
@@ -75,9 +75,9 @@ resource "github_repository_webhook" "webhook3" {
   repository = github_repository.repo.name
 
   configuration {
-    url          = "https://dev.azure.com/bdsdigital/_apis/public/hooks/externalEvents?publisherId=github&channelId=fabfa875-f6fa-48e9-95ec-4b1fea2c69f4&api-version=6.0-preview"
+    url          = "xxxxx"
     content_type = "application/json"
-    secret       = "qMQutYhLykGt7NXxz2UIMw=="
+    secret       = "xxxx"
     insecure_ssl = false
 
   }
@@ -91,7 +91,7 @@ resource "github_repository_webhook" "webhook4" {
   repository = github_repository.repo.name
 
   configuration {
-    url          = "https://vincent.bdsdigital.com.ar/promotions"
+    url          = "xxx"
     content_type = "application/json"
     insecure_ssl = false
 
@@ -114,7 +114,7 @@ resource "github_branch_protection" "protection1" {
     dismiss_stale_reviews = true
     require_code_owner_reviews = true
     required_approving_review_count = "2"
-    dismissal_users       = ["cicd-bds"]
+    dismissal_users       = ["cicd"]
   }
 }
 
@@ -132,6 +132,6 @@ resource "github_branch_protection" "protection2" {
     dismiss_stale_reviews = true
     require_code_owner_reviews = true
     required_approving_review_count = "1"
-    dismissal_users       = ["cicd-bds"]
+    dismissal_users       = ["cicd"]
   }
 }
